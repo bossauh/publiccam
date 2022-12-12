@@ -1,0 +1,16 @@
+{
+  "bruteforcer": {
+    "output_paths": [
+      "/out.jpg",
+      "/video.mjpg",
+      "/cam_{index}.cgi",
+      "/video",
+      "/cgi-bin/camera",
+      "/mjpg/video.mjpg",
+      "/cgi-bin/faststream.jpg",
+      "/webcapture.jpg"
+    ],
+    "port_range": [8000, 8010],
+    "content_types": ["image/jpeg", "multipart/x-mixed-replace"]
+  }
+}
