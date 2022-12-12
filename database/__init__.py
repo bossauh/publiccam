@@ -1,3 +1,7 @@
 from mongoclass import MongoClassClient
 
-mongoclass = MongoClassClient("publiccam", host="localhost:27017")
+from library.config import config
+
+mongoclass = MongoClassClient(**config.value["database"])
+if mongoclass._engine_used == "pymongo":
+    mongoclass.server_info()

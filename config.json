@@ -12,5 +12,9 @@
     ],
     "port_range": [8000, 8010],
     "content_types": ["image/jpeg", "multipart/x-mixed-replace"]
+  },
+  "database": {
+    "default_db_name": "publiccam",
+    "host": "localhost:27017"
   }
 }
