@@ -11,7 +11,8 @@
       "/webcapture.jpg"
     ],
     "port_range": [8000, 8010],
-    "content_types": ["image/jpeg", "multipart/x-mixed-replace"]
+    "content_types": ["image/jpeg", "multipart/x-mixed-replace"],
+    "batch_size": 1000
   },
   "database": {
     "default_db_name": "publiccam",
