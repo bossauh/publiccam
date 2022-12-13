@@ -11,7 +11,7 @@ class DynamicConfig:
     @property
     def value(self) -> dict:
 
-        if self.cached["data"] is None or (time.time() - self.cached["timestamp"] > 2):
+        if self.cached["data"] is None or (time.time() - self.cached["timestamp"] > 10):
             with open(self.path, encoding="utf-8", mode="r") as f:
                 self.cached["data"] = json.load(f)
 
