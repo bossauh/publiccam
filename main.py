@@ -76,7 +76,7 @@ class PublicCam:
                         validate(Camera(host=host, port=port, output_path=output_path))
                     )
 
-            if len(coroutines) > config.value["bruteforcer"]["batch-size"]:
+            if len(coroutines) > config.value["bruteforcer"]["batch_size"]:
                 await asyncio.gather(*coroutines)
                 coroutines.clear()
                 logger.info(
