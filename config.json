@@ -17,5 +17,13 @@
   "database": {
     "default_db_name": "publiccam",
     "host": "localhost:27017"
+  },
+  "aiohttp": {
+    "timeout": {
+      "total": null,
+      "connect": 60,
+      "sock_connect": 60,
+      "sock_read": 10
+    }
   }
 }

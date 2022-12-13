@@ -67,9 +67,7 @@ async def validate_aiohttp(
     try:
         async with aiohttp.ClientSession(
             timeout=timeout
-            or aiohttp.ClientTimeout(
-                total=None, connect=60, sock_connect=60, sock_read=10
-            ),
+            or aiohttp.ClientTimeout(**config.value["aiohttp"]["timeout"]),
         ) as ses:
             async with ses.get(url) as res:
 
